@@ -1,0 +1,26 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Change Content Example</title>  
+    <script>  
+        function changeContent() {  
+            // Select the <div> with id "myElement"  
+            var myDiv = document.getElementById('myElement');  
+            // Select the <p> element within the <div>  
+            var myParagraph = myDiv.querySelector('p');  
+            // Change the content of the <p> element  
+            myParagraph.textContent = 'Hello there!';  
+        }  
+        
+        // Ensure the function runs after the page loads  
+        window.onload = changeContent;  
+    </script>  
+</head>  
+<body>  
+    <div id="myElement">  
+        <p>Welcome to my website!</p>  
+    </div>  
+</body>  
+</html>
